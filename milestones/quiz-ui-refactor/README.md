@@ -1,7 +1,7 @@
 # Case Study: Advanced UI/UX Refactor for Lead Capture Quiz
 
 ## 📌 Context
-The "Label MBA" onboarding funnel relies on a complex quiz. The original 3rd-party implementation had generic styling, broken visibility for legal texts in Dark Mode, and typographic clipping issues.
+The "Label M" onboarding funnel relies on a complex quiz. The original 3rd-party implementation had generic styling, broken visibility for legal texts in Dark Mode, and typographic clipping issues.
 
 ## 🛠️ Technical Challenges & Solutions
 
