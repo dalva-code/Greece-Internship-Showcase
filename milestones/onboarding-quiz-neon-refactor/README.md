@@ -40,5 +40,5 @@ I used CSS advanced combinators to detect the "active" state of the quiz steps. 
 
 | Before (Generic Library UI) | After (Custom Neon UI) |
 | :---: | :---: |
-| ![Before 1](../../assets/quiz-before-1.png) | ![After 1](../../assets/quiz-after-1.png) |
-| ![Before 2](../../assets/quiz-before-2.png) | ![After 2](../../assets/quiz-after-2.png) |
+| ![Before 1](../../assets/before-1.png) | ![After 1](../../assets/after-1.png) |
+| ![Before 2](../../assets/before-2.png) | ![After 2](../../assets/after-2.png) |
