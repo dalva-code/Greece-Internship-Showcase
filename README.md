@@ -46,6 +46,7 @@ My work bridges the gap between complex backend logic (Firebase, SQL, Python) an
 | :--- | :--- | :--- |
 | **Advanced UI/UX Quiz Refactor** | CSS Specificity, WebKit Masking, Responsive Design | [View Case Study](./milestones/quiz-ui-refactor/README.md) |
 | **Admin Data Architecture** | Firebase Firestore, NoSQL Schema, TypeScript | [View Case Study](./milestones/admin-data-architecture/README.md) |
+| **Onboarding Quiz & Select2 Refactor** | CSS Wildcards, Flexbox, UI Synchronization | [View Case Study](./milestones/onboarding-quiz-neon-refactor/README.md) |
 
 ---
 
