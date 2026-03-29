@@ -37,3 +37,11 @@ Brand Consistency: 100% alignment with the company's "Cyberpunk" visual identity
 UX Friction Reduction: Improved mobile readability and button hierarchy (Primary vs. Ghost buttons).
 
 Architecture: Zero modification of the third-party core code, ensuring update compatibility.
+
+
+## 📸 Visual Comparison
+
+| Before (Generic Library UI) | After (Custom Neon UI) |
+| :---: | :---: |
+| ![Before 1](../../assets/before-1.png) | ![After 1](../../assets/after-1.png) |
+| ![Before 2](../../assets/before-2.png) | ![After 2](../../assets/after-2.png) |
