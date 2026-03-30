@@ -25,7 +25,7 @@ Here is a side-by-side comparison demonstrating how the single Modal component a
 
 | Media-Rich Layout | Text-Focused Layout |
 | :--- | :--- |
-| ![Label MBA - Multimedia Context](../../assets/real-time/comments-image.png) | ![Label MBA - Text-Only Context](../../assets/real-time/comments-post.png) |
+| ![Label MBA - Multimedia Context](../../assets/real-time/comment-image.png) | ![Label MBA - Text-Only Context](../../assets/real-time/comment-post.png) |
 | **Left (Media-Rich):** Widescreen, cinematic format optimized for visual engagement when multimedia metadata exists. | **Right (Text-Focused):** Narrower, centered format optimizing the readable viewport for standard text posts. |
 
 ## 🚀 Key Technologies
