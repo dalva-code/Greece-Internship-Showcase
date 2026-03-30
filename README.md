@@ -55,6 +55,7 @@ The Solution:
 
 | Milestone | Key Technologies | Documentation |
 | :--- | :--- | :--- |
+| **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](./milestones/real-time-social-engine/README.md) |
 | **Community Hub Architecture** | React, TypeScript, Glassmorphism, Social UX | [View Case Study](./milestones/community-hub-architecture/README.md) |
 | **Advanced UI/UX Quiz Refactor** | CSS Specificity, WebKit Masking, Responsive Design | [View Case Study](./milestones/quiz-ui-refactor/README.md) |
 | **Admin Data Architecture** | Firebase Firestore, NoSQL Schema, TypeScript | [View Case Study](./milestones/admin-data-architecture/README.md) |
