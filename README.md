@@ -38,6 +38,17 @@ My work bridges the gap between complex backend logic (Firebase, SQL, Python) an
 **The Problem:** Generic styling and mobile rendering bugs (typography clipping) in the main lead-capture tool, which affected user conversion rates.
 **The Solution:** Implemented a high-fidelity "Cinematic Neon" UI using CSS Specificity and WebKit Masking, optimizing the flow for conversion on high-end mobile devices.
 
+### 4. Community Hub: Social Engine & Modular Architecture
+
+**The Problem:** The initial community interface was a static, monolithic list that didn't allow for user interaction or content categorization, limiting student engagement.
+The Solution:
+
+**Architectural Decoupling:** Refactored the entire community module into a feature-based page system, separating business logic from UI components (PostCreator, PostCard).
+
+**Interactive UX:** Implemented a real-time "Optimistic UI" pattern for social interactions (likes, filtering) and a multi-category navigation system.
+
+**Gamification Integration:** Integrated "Mastery Cards" and "Leaderboards" into the layout to increase user retention and course completion rates.
+
 ---
 
 ## 🏗️ Technical Milestones & Architecture Case Studies
