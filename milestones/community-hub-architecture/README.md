@@ -20,4 +20,4 @@ To ensure scalability, I moved all community logic out of the root `App.tsx` and
 
 | Before (Static Feed) | After (Interactive Hub) |
 | :---: | :---: |
-| ![Before](../../assets/community-hub/community-before.png) | ![After](../../assets/community-hub/community-after.png) |
+| ![Before](../../assets/community-hub/community-before-v2.png) | ![After](../../assets/community-hub/community-after-v2.png) |
