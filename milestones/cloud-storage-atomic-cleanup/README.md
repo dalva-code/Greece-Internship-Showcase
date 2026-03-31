@@ -19,7 +19,7 @@ graph TD
     B -- Yes --> C[Delete from Cloud Storage]
     C --> D[Delete Firestore Document]
     B -- No --> D
-    D --> E[Update UI State]```
+    D --> E[Update UI State]
 
 
 💻 Technical Implementation Highlights
