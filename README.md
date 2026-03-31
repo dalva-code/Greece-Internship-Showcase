@@ -49,17 +49,30 @@ The Solution:
 
 **Gamification Integration:** Integrated "Mastery Cards" and "Leaderboards" into the layout to increase user retention and course completion rates.
 
+### 5. Cloud Storage Lifecycle & Atomic Resource Deletion
+
+**The Problem**: Deleting social posts in a decoupled architecture (Firestore for metadata, Storage for binaries) often led to "orphaned" assets. These "zombie files" stayed in the cloud bucket indefinitely, creating ghost storage costs and data clutter since Firebase does not natively sync deletions between services.
+
+**The Solution**:
+
+Sequential Cleanup Pipeline: Engineered an asynchronous service layer that extracts the media reference from the document before its destruction.
+
+Atomic Purge Logic: Implemented a "Storage-First" deletion flow. The system now triggers a physical file removal from the Cloud Storage bucket and, only upon success, proceeds to delete the NoSQL document.
+
+UX Attachment Feedback: Refactored the PostCreator UI to include a "Smart Thumbnail" system. This provides immediate visual confirmation of the attachment through local Blobs while maintaining a clean, minimalist editor interface.
 ---
 
 ## 🏗️ Technical Milestones & Architecture Case Studies
 
 | Milestone | Key Technologies | Documentation |
 | :--- | :--- | :--- |
+| **Cloud Storage Atomic Cleanup** | Firebase Storage, Firestore, Async/Await | [View Case Study](./milestones/cloud-storage-atomic-cleanup/README.md) |
 | **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](./milestones/real-time-social-engine/README.md) |
 | **Community Hub Architecture** | React, TypeScript, Glassmorphism, Social UX | [View Case Study](./milestones/community-hub-architecture/README.md) |
 | **Advanced UI/UX Quiz Refactor** | CSS Specificity, WebKit Masking, Responsive Design | [View Case Study](./milestones/quiz-ui-refactor/README.md) |
 | **Admin Data Architecture** | Firebase Firestore, NoSQL Schema, TypeScript | [View Case Study](./milestones/admin-data-architecture/README.md) |
 | **Onboarding Quiz & Select2 Refactor** | CSS Wildcards, Flexbox, UI Synchronization | [View Case Study](./milestones/onboarding-quiz-neon-refactor/README.md) |
+
 
 ---
 
