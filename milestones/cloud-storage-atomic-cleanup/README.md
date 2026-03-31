@@ -13,7 +13,7 @@ I implemented a **Sequential Deletion Pipeline**. We inverted the logical order 
 
 ### Logical Flow (Atomic Sequence)
 
-```mermaid
+```mermaid```
 graph TD
     A[Trigger Delete] --> B{Has mediaUrl?}
     B -- Yes --> C[Delete from Cloud Storage]
