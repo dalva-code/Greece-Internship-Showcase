@@ -13,14 +13,13 @@ I implemented a **Sequential Deletion Pipeline**. We inverted the logical order 
 
 ### Logical Flow (Atomic Sequence)
 
-```mermaid```
+```mermaid
 graph TD
     A[Trigger Delete] --> B{Has mediaUrl?}
     B -- Yes --> C[Delete from Cloud Storage]
     C --> D[Delete Firestore Document]
     B -- No --> D
     D --> E[Update UI State]
-
 
 💻 Technical Implementation Highlights
 Decoupled Cleanup: The service is agnostic; if no mediaUrl exists, the pipeline continues without errors.
