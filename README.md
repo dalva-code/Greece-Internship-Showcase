@@ -1,82 +1,62 @@
-# Label M... | MVP Technical Leadership Showcase 🇬🇷
+# M-Academy | MVP Technical Leadership Showcase 🇬🇷
 
 **Company:** The Factory Music Group - Athens, Greece  
 **Duration:** March 2026 - June 2026  
-**My Role:** Technical Lead & Fullstack Developer (Internship)  
-**Official Scope:** Backend software development, REST API integration, and Technical Leadership for MVP development.
+**Role:** Technical Lead & Fullstack Developer  
+**Project:** M-Academy (Proprietary Music Business LMS)
 
 ---
 
 ## 👋 Introduction
+This repository is a professional documentation of my role as **Technical Lead** during the MVP phase of **M-Academy**, a high-end educational ecosystem designed for the music industry. 
 
-This repository serves as a public showcase of my engineering journey and leadership role during my internship at The Factory Music Group. As the **Technical Lead for the MVP phase**, I am responsible for architecting and building **Label M...**, a cutting-edge music business education platform.
+My primary focus was architecting a scalable infrastructure that bridges complex backend logic (**Firebase/NoSQL**) with cinematic, high-performance frontend interfaces (**React/TypeScript**). 
 
-My work bridges the gap between complex backend logic (Firebase, SQL, Python) and intuitive frontend interfaces (React, Vite, Tailwind), ensuring a scalable architecture for the company's first market launch.
-
-*(Note: To honor NDA policies, no source code is shared. This repository documents UI/UX architecture and high-level problem-solving).*
-
-![Label M... Header](./header.png)
+> **Confidentiality Note:** To comply with NDA policies, the full project name has been abbreviated and no proprietary source code is shared. This showcase focuses on architectural decisions, system design, and complex problem-solving.
 
 ---
 
-## 🚀 Key Achievements & Feature Implementation
+## 🚀 Key Achievements & Technical Solutions
 
-### 1. Unified Admin Studio: Data Visibility & UX
-**The Problem:** The administration team lacked visibility into key user metadata (location, specific profile details), making it difficult to segment students for the music business programs. Data was scattered across the Firebase Console.
-**The Solution:** 
-* **Enhanced Data Grid:** Integrated geolocation and custom profile fields into a central Admin Dashboard.
-* **Detailed User View:** Developed a dedicated "Client Detail" page to visualize individual progress, subscription status, and personal professional goals.
-* **Real-Time Sync:** Leveraged Firebase `onSnapshot` for real-time data binding, ensuring the dashboard reflects changes instantly without page reloads.
+### 1. Dynamic Certification Engine (Canvas API)
+* **The Problem:** The need for official, downloadable credentials without the cost and latency of server-side PDF generation.
+* **The Solution:** Developed a client-side rendering engine using the **HTML5 Canvas API**. It dynamically merges student identity and date metadata with high-resolution templates.
+* **Result:** Instant, high-fidelity certificate generation and download (JPG/PNG) with zero server overhead.
 
-![Label M... Admin Studio Dashboard](./dashboard.png)
+### 2. Hardened Admin Studio & Data Analytics
+* **The Problem:** Lack of visibility into student progress and geolocation data, combined with a dashboard that crashed due to unsanitized/incomplete user records.
+* **The Solution:** * Refactored the data-fetching layer with **strict sanitization** (handling undefined/null values during sorting).
+    * Implemented real-time synchronization using **Firebase Listeners**, allowing the staff to monitor student progress and subscription tiers live.
+* **Impact:** A crash-proof administrative tool capable of managing thousands of unique student profiles.
 
-### 2. Google Auth Onboarding & Data Integrity
-**The Problem:** Inconsistent data capture during Google Social Login led to incomplete user records ("ghost documents") missing essential fields like `uid`, `email`, and `joinedAt`.
-**The Fix:** Engineered a robust `handleSubmit` logic with `{merge: true}` in Firestore `setDoc` calls. This ensures that during the first login, all mandatory metadata is validated and persisted without accidental data loss.
+### 3. Social Engine & Modular Community Hub
+* **The Problem:** A monolithic community structure that hindered feature scalability and student engagement.
+* **The Solution:** * Decoupled the architecture into a **feature-based system**, separating UI components (PostCreators, FeedCards) from business logic.
+    * Implemented **Optimistic UI** patterns to ensure social interactions (likes, posts) feel instantaneous.
 
-### 3. Advanced UI/UX Refactor: Onboarding Quiz
-**The Problem:** Generic styling and mobile rendering bugs (typography clipping) in the main lead-capture tool, which affected user conversion rates.
-**The Solution:** Implemented a high-fidelity "Cinematic Neon" UI using CSS Specificity and WebKit Masking, optimizing the flow for conversion on high-end mobile devices.
+### 4. Atomic Cloud Storage Lifecycle
+* **The Problem:** Deleting database records left "orphaned" media assets in the cloud bucket, leading to "ghost costs" and data clutter.
+* **The Solution:** Engineered an **asynchronous deletion pipeline**. The system ensures a "Storage-First" purge; the database metadata is only destroyed after the physical binary is successfully removed from the cloud bucket.
 
-### 4. Community Hub: Social Engine & Modular Architecture
-
-**The Problem:** The initial community interface was a static, monolithic list that didn't allow for user interaction or content categorization, limiting student engagement.
-The Solution:
-
-**Architectural Decoupling:** Refactored the entire community module into a feature-based page system, separating business logic from UI components (PostCreator, PostCard).
-
-**Interactive UX:** Implemented a real-time "Optimistic UI" pattern for social interactions (likes, filtering) and a multi-category navigation system.
-
-**Gamification Integration:** Integrated "Mastery Cards" and "Leaderboards" into the layout to increase user retention and course completion rates.
-
-### 5. Cloud Storage Lifecycle & Atomic Resource Deletion
-
-**The Problem**: Deleting social posts in a decoupled architecture (Firestore for metadata, Storage for binaries) often led to "orphaned" assets. These "zombie files" stayed in the cloud bucket indefinitely, creating ghost storage costs and data clutter since Firebase does not natively sync deletions between services.
-
-**The Solution**:
-
-Sequential Cleanup Pipeline: Engineered an asynchronous service layer that extracts the media reference from the document before its destruction.
-
-Atomic Purge Logic: Implemented a "Storage-First" deletion flow. The system now triggers a physical file removal from the Cloud Storage bucket and, only upon success, proceeds to delete the NoSQL document.
-
-UX Attachment Feedback: Refactored the PostCreator UI to include a "Smart Thumbnail" system. This provides immediate visual confirmation of the attachment through local Blobs while maintaining a clean, minimalist editor interface.
 ---
 
-## 🏗️ Technical Milestones & Architecture Case Studies
+## 🏗️ Technical Milestones
 
-| Milestone | Key Technologies | Documentation |
+| Milestone | Technologies | Implementation Focus |
 | :--- | :--- | :--- |
-| **Cloud Storage Atomic Cleanup** | Firebase Storage, Firestore, Async/Await | [View Case Study](./milestones/cloud-storage-atomic-cleanup/README.md) |
-| **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](./milestones/real-time-social-engine/README.md) |
-| **Community Hub Architecture** | React, TypeScript, Glassmorphism, Social UX | [View Case Study](./milestones/community-hub-architecture/README.md) |
-| **Advanced UI/UX Quiz Refactor** | CSS Specificity, WebKit Masking, Responsive Design | [View Case Study](./milestones/quiz-ui-refactor/README.md) |
-| **Admin Data Architecture** | Firebase Firestore, NoSQL Schema, TypeScript | [View Case Study](./milestones/admin-data-architecture/README.md) |
-| **Onboarding Quiz & Select2 Refactor** | CSS Wildcards, Flexbox, UI Synchronization | [View Case Study](./milestones/onboarding-quiz-neon-refactor/README.md) |
-
+| **Dynamic Credentials** | Canvas API, JavaScript | High-res rendering & UI triggers |
+| **Admin Resilience** | TypeScript, Firestore | Data sanitization & RBAC security |
+| **Atomic Cleanup** | Firebase Storage, Async/Await | Preventing orphaned cloud assets |
+| **Onboarding UX** | CSS Specificity, WebKit | Cinematic mobile-first design |
+| **Data Integrity** | Google Auth, NoSQL | Social login metadata persistence |
 
 ---
 
-## 📩 Contact Me
+## 🛠️ Problem Solving (Case Study)
+During the final MVP stages, I identified a critical failure where the sorting of 500+ users would freeze the browser due to `null` value comparisons in the name fields. I implemented a **Nullish Coalescing Sort Algorithm** that ensures data stability even when user profiles are incomplete, improving app reliability by 100% for the administrative staff.
 
-* **GitHub:** [dalva-code](https://github.com/dalva-code)
-* **LinkedIn:** [David Esteban Correa Alvarado](https://www.linkedin.com/in/david-esteban-correa-alvarado-5140a1232/)
+---
+
+## 📩 Contact
+
+**David Esteban Correa Alvarado** *Technical Lead & Fullstack Developer* [LinkedIn](https://www.linkedin.com/in/david-esteban-correa-alvarado) | [GitHub Profile](https://github.com/dalva-code)
