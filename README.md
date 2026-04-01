@@ -10,7 +10,7 @@
 ## 👋 Introduction
 This repository is a professional documentation of my role as **Technical Lead** during the MVP phase of **M-Academy**, a high-end educational ecosystem designed for the music industry. 
 
-My primary focus was architecting a scalable infrastructure that bridges complex backend logic (**Firebase/NoSQL**) with cinematic, high-performance frontend interfaces (**React/TypeScript**). 
+My primary focus was architecting a scalable bridge between complex backend logic (**Firebase/NoSQL**) and high-performance frontend interfaces (**React/TypeScript**). 
 
 > **Confidentiality Note:** To comply with NDA policies, the full project name has been abbreviated and no proprietary source code is shared. This showcase focuses on architectural decisions, system design, and complex problem-solving.
 
@@ -31,7 +31,7 @@ My primary focus was architecting a scalable infrastructure that bridges complex
 
 ### 3. Social Engine & Modular Community Hub
 * **The Problem:** A monolithic community structure that hindered feature scalability and student engagement.
-* **The Solution:** * Decoupled the architecture into a **feature-based system**, separating UI components (PostCreators, FeedCards) from business logic.
+* **The Solution:** * Decoupled the architecture into a **feature-based system**, separating UI components from business logic.
     * Implemented **Optimistic UI** patterns to ensure social interactions (likes, posts) feel instantaneous.
 
 ### 4. Atomic Cloud Storage Lifecycle
@@ -42,18 +42,19 @@ My primary focus was architecting a scalable infrastructure that bridges complex
 
 ## 🏗️ Technical Milestones
 
-| Milestone | Technologies | Implementation Focus |
+| Milestone | Key Technologies | Documentation |
 | :--- | :--- | :--- |
-| **Dynamic Credentials** | Canvas API, JavaScript | High-res rendering & UI triggers |
-| **Admin Resilience** | TypeScript, Firestore | Data sanitization & RBAC security |
-| **Atomic Cleanup** | Firebase Storage, Async/Await | Preventing orphaned cloud assets |
-| **Onboarding UX** | CSS Specificity, WebKit | Cinematic mobile-first design |
-| **Data Integrity** | Google Auth, NoSQL | Social login metadata persistence |
+| **Cloud Storage Atomic Cleanup** | Firebase Storage, Firestore, Async/Await | [View Case Study](#) |
+| **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](#) |
+| **Admin Data Architecture** | NoSQL Schema Design, TypeScript | [View Case Study](#) |
+| **UI/UX Cinematic Refactor** | CSS Specificity, WebKit Masking | [View Case Study](#) |
+| **Onboarding Quiz & Sync** | CSS Wildcards, Flexbox, UI Sync | [View Case Study](#) |
+| **Dynamic Credentials** | HTML5 Canvas, Media Buffers | [View Case Study](#) |
 
 ---
 
 ## 🛠️ Problem Solving (Case Study)
-During the final MVP stages, I identified a critical failure where the sorting of 500+ users would freeze the browser due to `null` value comparisons in the name fields. I implemented a **Nullish Coalescing Sort Algorithm** that ensures data stability even when user profiles are incomplete, improving app reliability by 100% for the administrative staff.
+During the final MVP stages, I identified a critical failure where the sorting of users would freeze the browser due to `null` value comparisons in the name fields. I implemented a **Nullish Coalescing Sort Algorithm** that ensures data stability even when user profiles are incomplete, improving app reliability by 100% for the administrative staff.
 
 ---
 
