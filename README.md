@@ -44,12 +44,12 @@ My primary focus was architecting a scalable bridge between complex backend logi
 
 | Milestone | Key Technologies | Documentation |
 | :--- | :--- | :--- |
-| **Cloud Storage Atomic Cleanup** | Firebase Storage, Firestore, Async/Await | [View Case Study](#4-atomic-cloud-storage-lifecycle) |
-| **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](#3-social-engine--modular-community-hub) |
-| **Admin Data Architecture** | NoSQL Schema Design, TypeScript | [View Case Study](#2-hardened-admin-studio--data-analytics) |
-| **UI/UX Cinematic Refactor** | CSS Specificity, WebKit Masking | [View Case Study](#🚀-key-achievements--technical-solutions) |
-| **Dynamic Credentials** | HTML5 Canvas, Media Buffers | [View Case Study](#1-dynamic-certification-engine) |
-| **Sorting Logic & Sanitization** | JavaScript, Nullish Coalescing | [View Case Study](#🛠️-problem-solving-case-study) |
+| **Cloud Storage Atomic Cleanup** | Firebase Storage, Firestore, Async/Await | [View Case Study](./milestones/cloud-storage-atomic-cleanup) |
+| **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](./milestones/real-time-social-engine) |
+| **Admin Data Architecture** | NoSQL Schema Design, TypeScript | [View Case Study](./milestones/admin-data-architecture) |
+| **UI/UX Cinematic Refactor** | CSS Specificity, WebKit Masking | [View Case Study](./milestones/community-hub-architecture) |
+| **Onboarding Quiz & Sync** | CSS Wildcards, Flexbox, UI Sync | [View Case Study](./milestones/onboarding-quiz-neon-refactor) |
+| **Credentials Engine** | HTML5 Canvas, Media Buffers | [View Case Study](./milestones/quiz-ui-refactor) |
 
 ---
 
