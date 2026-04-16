@@ -44,6 +44,7 @@ My work focused on architecting a scalable bridge between complex backend logic 
 
 | Milestone | Key Technologies | Documentation |
 | :--- | :--- | :--- |
+| **Resilient Analytics Engine** | Angular 19, Tailwind v4, Feature Flags | [View Deep Dive Case Study](https://github.com/dalva-code/angular-tailwind-ui-architecture) |
 | **Cloud Storage Atomic Cleanup** | Firebase Storage, Firestore, Async/Await | [View Case Study](./milestones/cloud-storage-atomic-cleanup) |
 | **Real-Time Social Engine** | React, Firebase, Data Normalization | [View Case Study](./milestones/real-time-social-engine) |
 | **Admin Data Architecture** | NoSQL Schema Design, TypeScript | [View Case Study](./milestones/admin-data-architecture) |
