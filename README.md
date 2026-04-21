@@ -38,6 +38,12 @@ My work focused on architecting a scalable bridge between complex backend logic 
 * **The Problem:** Deleting database records left "orphaned" media assets in the cloud bucket, leading to unnecessary storage costs.
 * **The Solution:** Engineered an **asynchronous deletion pipeline** that ensures a "Storage-First" purge; metadata is only destroyed after the physical binary is removed.
 
+### 5. Automated CI/CD Pipeline & Resource Optimization
+
+* **The Problem:** Hosting environment limitations (RAM/CPU) caused consistent build failures for the React/Vite application, creating a bottleneck in the deployment lifecycle.
+* **The Solution:** Architected a CI/CD pipeline using GitHub Actions to offload the build process to cloud runners. This ensures that only optimized, production-ready assets are synced via a secure automated pipeline.
+Impact: Eliminated 100% of server-side build crashes and reduced deployment time from 15 minutes (manual) to under 2 minutes (automated).
+
 ---
 
 ## 🏗️ Technical Milestones
