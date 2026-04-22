@@ -57,12 +57,49 @@ Impact: Eliminated 100% of server-side build crashes and reduced deployment time
 | **UI/UX Cinematic Refactor** | CSS Specificity, WebKit Masking | [View Case Study](./milestones/community-hub-architecture) |
 | **Onboarding Quiz & Sync** | CSS Wildcards, Flexbox, UI Sync | [View Case Study](./milestones/onboarding-quiz-neon-refactor) |
 | **Credentials Engine** | HTML5 Canvas, Media Buffers | [View Case Study](./milestones/quiz-ui-refactor) |
-
+|**I/CD Cloud Deployment** |	GitHub Actions, YAML, FTP-Deploy | View Workflow Below
 ---
 
 ## 🛠️ Problem Solving (Case Study)
 During the final MVP stages, I identified that the production environment was unable to process Vite builds due to hardware memory constraints. Instead of requesting a costly and unnecessary server upgrade, I engineered a Continuous Integration (CI/CD) solution leveraging GitHub Actions to offload the compilation process to external cloud runners. This strategic move not only eliminated infrastructure overhead but also guaranteed 100% stability and reliability in the software deployment lifecycle.
 
+### 🚀 Infrastructure as Code (CI/CD)
+
+<details>
+  <summary><b>Automated Pipeline:</b> Applied a standard YAML-based automated pipeline to bypass hardware constraints. (Click to see the logic)</summary>
+
+  #### Technical Rationale:
+  To solve memory-related build failures on the production server, I offloaded the compilation process to GitHub-hosted runners. This ensures only production-ready assets are deployed, keeping the server overhead at zero.
+
+  ```yaml
+  name: 🚀 Deploy Platform
+  on:
+    push:
+      branches:
+        - main
+
+  jobs:
+    web-deploy:
+      name: 🎉 Deploy to Hostinger
+      runs-on: ubuntu-latest
+      steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 🔧 Install dependencies
+        run: npm install
+
+      - name: 🏗️ Build Project
+        run: npm run build
+
+      - name: 📂 Sync files (SFTP/FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./public_html/
 ---
 
 ## 📩 Contact
