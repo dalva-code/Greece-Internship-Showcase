@@ -72,7 +72,7 @@ During the final MVP stages, I identified that the production environment was un
   To solve memory-related build failures on the production server, I offloaded the compilation process to GitHub-hosted runners. This ensures only production-ready assets are deployed, keeping the server overhead at zero.
 
   ```yaml
-  name: 🚀 Deploy Platform
+  name: Deploy Platform
   on:
     push:
       branches:
@@ -80,19 +80,19 @@ During the final MVP stages, I identified that the production environment was un
 
   jobs:
     web-deploy:
-      name: 🎉 Deploy to Hostinger
+      name:  Deploy to Hostinger
       runs-on: ubuntu-latest
       steps:
-      - name: 🚚 Get latest code
+      - name:  Get latest code
         uses: actions/checkout@v3
 
-      - name: 🔧 Install dependencies
+      - name:  Install dependencies
         run: npm install
 
-      - name: 🏗️ Build Project
+      - name:  Build Project
         run: npm run build
 
-      - name: 📂 Sync files (SFTP/FTP)
+      - name:  Sync files (SFTP/FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
