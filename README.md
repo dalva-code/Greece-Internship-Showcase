@@ -57,7 +57,7 @@ Impact: Eliminated 100% of server-side build crashes and reduced deployment time
 | **UI/UX Cinematic Refactor** | CSS Specificity, WebKit Masking | [View Case Study](./milestones/community-hub-architecture) |
 | **Onboarding Quiz & Sync** | CSS Wildcards, Flexbox, UI Sync | [View Case Study](./milestones/onboarding-quiz-neon-refactor) |
 | **Credentials Engine** | HTML5 Canvas, Media Buffers | [View Case Study](./milestones/quiz-ui-refactor) |
-|**I/CD Cloud Deployment** |	GitHub Actions, YAML, FTP-Deploy | View Workflow Below
+|**I/CD Cloud Deployment** |	GitHub Actions, YAML, FTP-Deploy | [View Workflow Below](#-infrastructure-as-code-cicd) |
 ---
 
 ## 🛠️ Problem Solving (Case Study)
