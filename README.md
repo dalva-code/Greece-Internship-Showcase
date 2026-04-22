@@ -61,7 +61,7 @@ Impact: Eliminated 100% of server-side build crashes and reduced deployment time
 ---
 
 ## 🛠️ Problem Solving (Case Study)
-During the final MVP stages, I identified a critical failure where sorting users would freeze the browser due to `null` value comparisons. I implemented a **Nullish Coalescing Sort Algorithm** that ensures data stability even with incomplete profiles, improving app reliability for the administrative staff.
+During the final MVP stages, I identified that the production environment was unable to process Vite builds due to hardware memory constraints. Instead of requesting a costly and unnecessary server upgrade, I engineered a Continuous Integration (CI/CD) solution leveraging GitHub Actions to offload the compilation process to external cloud runners. This strategic move not only eliminated infrastructure overhead but also guaranteed 100% stability and reliability in the software deployment lifecycle.
 
 ---
 
