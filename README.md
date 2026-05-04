@@ -18,27 +18,31 @@ My work focused on architecting a scalable bridge between complex backend logic 
 
 ## 🚀 Key Achievements & Technical Solutions
 
-### 1. Dynamic Certification Engine (Canvas API)
+### 1. Real-Time Analytics & Production API Integration
+
+Delivered live admin analytics over user and program data (geolocation, profiles, subscriptions, goals) with Firestore snapshot listeners, plus clearer segmentation for the music business programs. Full technical write-up: [case study](./case-studies/production-api-integration.md).
+
+### 2. Dynamic Certification Engine (Canvas API)
 * **The Problem:** The need for official, downloadable credentials without the cost and latency of server-side PDF generation.
 * **The Solution:** Developed a client-side rendering engine using the **HTML5 Canvas API**. It dynamically merges student identity and date metadata with high-resolution templates.
 * **Result:** Instant, high-fidelity certificate generation and download (JPG/PNG) with zero server overhead.
 
-### 2. Hardened Admin Studio & Data Analytics
+### 3. Hardened Admin Studio & Data Analytics
 * **The Problem:** Lack of visibility into student progress combined with a dashboard that crashed due to unsanitized or incomplete user records ("null" values in sorting).
 * **The Solution:** * Refactored the data-fetching layer with **strict sanitization**.
     * Implemented real-time synchronization using **Firebase Listeners**, allowing staff to monitor student progress and subscription tiers live.
 * **Impact:** A crash-proof administrative tool capable of managing thousands of unique student profiles.
 
-### 3. Social Engine & Modular Community Hub
+### 4. Social Engine & Modular Community Hub
 * **The Problem:** A monolithic community structure that hindered feature scalability and student engagement.
 * **The Solution:** * Decoupled the architecture into a **feature-based system**, separating UI components from business logic.
     * Implemented **Optimistic UI** patterns to ensure social interactions (likes, posts) feel instantaneous.
 
-### 4. Atomic Cloud Storage Lifecycle
+### 5. Atomic Cloud Storage Lifecycle
 * **The Problem:** Deleting database records left "orphaned" media assets in the cloud bucket, leading to unnecessary storage costs.
 * **The Solution:** Engineered an **asynchronous deletion pipeline** that ensures a "Storage-First" purge; metadata is only destroyed after the physical binary is removed.
 
-### 5. Automated CI/CD Pipeline & Resource Optimization
+### 6. Automated CI/CD Pipeline & Resource Optimization
 
 * **The Problem:** Hosting environment limitations (RAM/CPU) caused consistent build failures for the React/Vite application, creating a bottleneck in the deployment lifecycle.
 * **The Solution:** Architected a CI/CD pipeline using GitHub Actions to offload the build process to cloud runners. This ensures that only optimized, production-ready assets are synced via a secure automated pipeline.
